@@ -1,0 +1,298 @@
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* kalo dibuka melalui live-server(extensions vscode) font dan background-image terdeteksi tapi kalau file index di open with browser 
+(di klik 2x pada file index), font dan background-image tidak terdeteksi */
+@font-face {
+    font-family: poppin;
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+
+body {
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: poppin;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* header */
+.header {
+    height: 75px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 11px lightgray;
+}
+
+.logo {
+    width: 124px;
+    margin-top: 13px;
+    color: #413e66;
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+
+.header-left {
+    float: left;
+}
+
+li {
+    list-style: none;
+}
+
+.header-list li {
+    padding: 25px 35px 35px 0px;
+    float: right;
+    letter-spacing: 1px;
+
+}
+
+.header-list a {
+    text-decoration: none;
+    color: #413e66;
+    transition: all 0.5s;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-list a:hover {
+    color: #1bb1dc;
+}
+
+
+/* top-wrapper */
+
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url('../image/intro-bg.jpg');
+    background-size: cover;
+    color: black;
+    text-align: center;
+    height: 58vh;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.row {
+    float: left;
+    width: 50%;
+}
+
+.row h2 {
+    font-size: 48px;
+    text-align: left;
+    font-weight: 800;
+    color: #413e66;
+    margin-top: 60px;
+    line-height: 1.3;
+}
+
+
+.row span {
+    color: #1bb1dc;
+}
+
+.button {
+    font-family: Poppin;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    transition: all 0.5s;
+    color: #fff;
+    background: #1bb1dc;
+    margin-left: -430px;
+
+}
+
+.button:hover {
+    background-color: #1799bd;
+}
+
+/* .about-wrapper */
+.about-wrapper {
+    height: 585px;
+    padding-bottom: 80px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.about-logo img {
+    margin-top: 100px;
+}
+
+.about-text {
+    margin-top: 80px;
+}
+
+.about-text h2,
+h3,
+p {
+    text-align: left;
+    letter-spacing: 0.8px;
+}
+
+.about-text h2 {
+    color: #413e66;
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.about-text h3 {
+    color: #696592;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* activity-wrapper */
+.activity-wrapper {
+    background-color: #DEE1EC;
+    padding-bottom: 80px;
+    text-align: center;
+    height: 585px;
+}
+
+.heading-activity h2 {
+    padding-top: 120px;
+    color: #413e66;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.heading-activity p {
+    color: #696592;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.activity {
+    float: left;
+    width: 25%;
+    margin-top: 50px;
+}
+
+.activity-img img {
+    height: 180px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: width 0.7s, height 0.7s;
+}
+
+.activity-img img:hover {
+    height: 190px;
+    width: 260px;
+}
+
+.activity p {
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #696592;
+    text-align: center;
+}
+
+/* team-wrapper */
+.team-wrapper {
+    height: 750px;
+    padding-bottom: 80px;
+    background-color: #f7f7f7;
+    text-align: center;
+    /* padding-top: 20px; */
+}
+
+.team {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+
+}
+
+.team img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border: 1px solid #eee;
+    box-shadow: 1px 2px 3px #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* footer */
+
+.heading-footer {
+    color: #413e66;
+}
+
+.footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+.footer {
+    padding: 20px 30px 10px 30px;
+}
+
+.content-footer img {
+    height: 20px;
+    width: auto;
+
+}
+
+.content-footer {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    color: #535074;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
